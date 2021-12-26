@@ -10,7 +10,7 @@ const toLogin = () => router.push("./login");
         <div>
           <img
             class="h-32 w-full md:h-4/6 md:w-128 mt-6"
-            src="/img/nippon-grand-prix-title.png"
+            src="~/assets/img/nippon-grand-prix-title.png"
             alt="サービス"
           />
           <p class="font-black text-xl md:text-6xl mt-4 px-6">
@@ -20,7 +20,11 @@ const toLogin = () => router.push("./login");
             〜新感覚な大喜利アプリ〜
           </p>
         </div>
-        <img class="h-64 md:h-screen" src="/img/sayno.png" alt="person" />
+        <img
+          class="h-64 md:h-screen"
+          src="~/assets/img/sayno.png"
+          alt="person"
+        />
       </div>
     </div>
     <div class="bg-black h-full px-4 py-8 md:py-20">
@@ -150,7 +154,7 @@ const toLogin = () => router.push("./login");
         <div class="w-40 md:w-80 text-white text-justify">
           <img
             class="h-64 md:h-4/6 rounded-md"
-            src="/img/HowToUse/sp1.png"
+            src="~/assets/img/HowToUse/sp1.png"
             alt="sp1"
           />
           <p class="mt-4 text-md font-bold md:text-3xl">①簡単に評価</p>
@@ -161,7 +165,7 @@ const toLogin = () => router.push("./login");
         <div class="w-40 ml-4 md:ml-40 md:w-80 text-white text-justify">
           <img
             class="h-64 md:h-4/6 rounded-md"
-            src="/img/HowToUse/sp2.png"
+            src="~/assets/img/HowToUse/sp2.png"
             alt="sp1"
           />
           <p class="mt-4 text-md font-bold md:text-3xl">②1分以内に回答</p>
@@ -404,7 +408,7 @@ const toLogin = () => router.push("./login");
         <div class="flex justify-center">
           <img
             class="h-64 md:h-96"
-            src="/img/applink-logo.png"
+            src="~/assets/img/applink-logo.png"
             alt="app-logo"
           />
         </div>
