@@ -62,7 +62,8 @@ const { userInfo, loginWithGoogle } = useAuth();
           md:text-3xl
         "
       >
-        Nipponグランプリは、大喜利をスワイプで評価、クイズ形式で投稿して余暇を楽しむサービスです。
+        <span class="text-yellow-500">Nipponグランプリ</span>
+        は、大喜利をスワイプで評価、クイズ形式で投稿して余暇を楽しむサービスです。
       </h1>
     </div>
     <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
@@ -303,7 +304,9 @@ const { userInfo, loginWithGoogle } = useAuth();
               md:text-xl
             "
           >
-            新感覚な、大喜利アプリ『Nipponグランプリ』は、バカ、シュール、身内などのお題に対して回答されたコンテンツをテンポよくスワイプすることでおもしろい大喜利にすぐ出会える
+            新感覚な大喜利アプリ『<span class="font-bold text-yellow-500"
+              >Nipponグランプリ</span
+            >』は、バカ、シュール、身内などのお題に対して回答されたコンテンツをテンポよくスワイプすることでおもしろい大喜利にすぐ出会える
           </p>
           <div class="flex justify-center py-8 md:justify-start">
             <button
