@@ -9,25 +9,25 @@ const { userInfo, loginWithGoogle } = useAuth();
       <div class="flex">
         <div>
           <img
-            class="h-32 w-full md:h-4/5 md:w-128 mt-6"
-            src="../assets/img/nippon-grand-prix-title.png"
+            class="h-32 w-full md:h-4/6 md:w-128 mt-6"
+            src="~/public/img/nippon-grand-prix-title.png"
             alt="サービス"
           />
-          <p class="font-bold text-2xl md:text-5xl mt-4 px-6">
-            笑いを、みんなと
+          <p class="font-black text-xl md:text-5xl mt-4 px-6">
+            スワイプでひと笑い
           </p>
-          <p class="font-bold text-md md:text-2xl mt-4 px-6">
+          <p class="font-bold text-base md:text-2xl mt-2 px-6">
             〜新感覚な大喜利アプリ〜
           </p>
         </div>
         <img
           class="h-64 md:h-screen"
-          src="../assets/img/sayno.png"
+          src="~/public/img/sayno.png"
           alt="person"
         />
       </div>
     </div>
-    <div class="bg-black h-full md:h-screen px-4 py-8 md:py-20">
+    <div class="bg-black h-full px-4 py-8 md:py-20">
       <div class="flex justify-center">
         <button
           type="button"
@@ -36,11 +36,11 @@ const { userInfo, loginWithGoogle } = useAuth();
             from-yellow-600
             to-zinc-400
             hover:from-zinc-500
-            hover:to-yellow-500
+            hover:to-teal-600
             cursor-pointer
             text-white
             font-bold
-            py-4
+            py-3
             px-8
             rounded-full
             md:text-3xl
@@ -49,30 +49,39 @@ const { userInfo, loginWithGoogle } = useAuth();
           "
           @click="loginWithGoogle"
         >
-          さっそくボケてみる！
+          さっそくひと笑い！
         </button>
       </div>
-      <h1 class="font-bold text-white text-center px-6 my-10 md:text-3xl">
-        Nipponグランプリは、大喜利を評価・投稿して余暇を楽しむサービスです。
+      <h1
+        class="
+          font-bold
+          text-white text-justify
+          md:text-center
+          px-6
+          py-8
+          md:text-3xl
+        "
+      >
+        Nipponグランプリは、大喜利をスワイプで評価、クイズ形式で投稿して余暇を楽しむサービスです。
       </h1>
-      <p class="font-bold text-3xl md:text-4xl text-white mt-4 md:mt-20">
-        特徴
-      </p>
-      <p class="my-4 text-sm text-[#F7CC45]">Feature</p>
-      <div md:flex>
+    </div>
+    <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
+      <p class="font-bold text-3xl md:text-4xl md:mt-20">特徴</p>
+      <p class="my-4 text-sm text-white">Feature</p>
+      <div class="py-8 md:flex">
         <div class="rounded border p-3 shadow-lg">1</div>
         <div class="rounded border p-3 shadow-lg">2</div>
         <div class="rounded border p-3 shadow-lg">3</div>
       </div>
     </div>
-    <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
-      <p class="font-bold text-3xl md:text-4xl">使い方</p>
-      <p class="my-4 text-sm text-white">How to Use</p>
-      <div class="flex md:justify-center md:pt-20">
-        <div class="w-40 md:w-80">
+    <div class="bg-black h-full md:h-screen px-4 py-8">
+      <p class="font-bold text-3xl md:text-4xl text-white">使い方</p>
+      <p class="my-4 text-sm text-[#F7CC45]">How to Use</p>
+      <div class="flex justify-center py-8 md:pt-20">
+        <div class="w-40 md:w-80 text-white text-justify">
           <img
-            class="h-64 md:h-full"
-            src="../assets/img/HowToUse/sp1.png"
+            class="h-64 md:h-4/6 rounded-md"
+            src="~/public/img/HowToUse/sp1.png"
             alt="sp1"
           />
           <p class="mt-4 text-md font-bold md:text-3xl">①簡単に評価</p>
@@ -80,10 +89,10 @@ const { userInfo, loginWithGoogle } = useAuth();
             大喜利のお題、回答を見て、おもしろいと思ったものには気軽にNiPPONを送りましょう
           </p>
         </div>
-        <div class="w-40 ml-4 md:ml-40 md:w-80">
+        <div class="w-40 ml-4 md:ml-40 md:w-80 text-white text-justify">
           <img
-            class="h-64 md:h-full"
-            src="../assets/img/HowToUse/sp2.png"
+            class="h-64 md:h-4/6 rounded-md"
+            src="~/public/img/HowToUse/sp2.png"
             alt="sp1"
           />
           <p class="mt-4 text-md font-bold md:text-3xl">②1分以内に回答</p>
@@ -93,13 +102,13 @@ const { userInfo, loginWithGoogle } = useAuth();
         </div>
       </div>
     </div>
-    <div class="bg-black h-full md:h-screen px-4 py-8">
-      <p class="font-bold text-3xl md:text-4xl text-white">よくある質問</p>
-      <p class="my-4 text-sm text-[#F7CC45]">Question & Answer</p>
+    <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
+      <p class="font-bold text-3xl md:text-4xl text-black">よくある質問</p>
+      <p class="my-4 text-sm text-white">Question & Answer</p>
       <div class="divide-y">
         <div class="py-8 md:py-12">
           <blockquote
-            class="text-md font-semibold italic text-white md:text-2xl"
+            class="text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
@@ -116,14 +125,14 @@ const { userInfo, loginWithGoogle } = useAuth();
             ボケてスベったらなぐさめてくれますか？
           </blockquote>
           <blockquote
-            class="mt-4 text-md font-semibold italic text-white md:text-2xl"
+            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
                 before:block
                 before:absolute
                 before:-inset-1 before:-skew-y-3
-                before:bg-yellow-500
+                before:bg-teal-600
                 relative
                 inline-block
               "
@@ -135,7 +144,7 @@ const { userInfo, loginWithGoogle } = useAuth();
         </div>
         <div class="py-8 md:py-12">
           <blockquote
-            class="text-md font-semibold italic text-white md:text-2xl"
+            class="text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
@@ -152,14 +161,14 @@ const { userInfo, loginWithGoogle } = useAuth();
             大喜利初心者でも投稿できますか？
           </blockquote>
           <blockquote
-            class="mt-4 text-md font-semibold italic text-white md:text-2xl"
+            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
                 before:block
                 before:absolute
                 before:-inset-1 before:-skew-y-3
-                before:bg-yellow-500
+                before:bg-teal-600
                 relative
                 inline-block
               "
@@ -171,7 +180,7 @@ const { userInfo, loginWithGoogle } = useAuth();
         </div>
         <div class="py-8 md:py-12">
           <blockquote
-            class="text-md font-semibold italic text-white md:text-2xl"
+            class="text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
@@ -188,14 +197,14 @@ const { userInfo, loginWithGoogle } = useAuth();
             無料で利用できますか？
           </blockquote>
           <blockquote
-            class="mt-4 text-md font-semibold italic text-white md:text-2xl"
+            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
                 before:block
                 before:absolute
                 before:-inset-1 before:-skew-y-3
-                before:bg-yellow-500
+                before:bg-teal-600
                 relative
                 inline-block
               "
@@ -207,7 +216,7 @@ const { userInfo, loginWithGoogle } = useAuth();
         </div>
         <div class="py-8 md:py-12">
           <blockquote
-            class="text-md font-semibold italic text-white md:text-2xl"
+            class="text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
@@ -221,17 +230,17 @@ const { userInfo, loginWithGoogle } = useAuth();
             >
               <span class="relative text-white">Q</span>
             </span>
-            つまらない評価が多すぎて困ってます
+            『Nippon』がもらえなくて困ってます
           </blockquote>
           <blockquote
-            class="mt-4 text-md font-semibold italic text-white md:text-2xl"
+            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
                 before:block
                 before:absolute
                 before:-inset-1 before:-skew-y-3
-                before:bg-yellow-500
+                before:bg-teal-600
                 relative
                 inline-block
               "
@@ -243,7 +252,7 @@ const { userInfo, loginWithGoogle } = useAuth();
         </div>
         <div class="py-8 md:py-12">
           <blockquote
-            class="text-md font-semibold italic text-white md:text-2xl"
+            class="text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
@@ -257,17 +266,17 @@ const { userInfo, loginWithGoogle } = useAuth();
             >
               <span class="relative text-white">Q</span>
             </span>
-            Nipponってどういう意味ですか？
+            『Nippon』ってどういう意味ですか？
           </blockquote>
           <blockquote
-            class="mt-4 text-md font-semibold italic text-white md:text-2xl"
+            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
           >
             <span
               class="
                 before:block
                 before:absolute
                 before:-inset-1 before:-skew-y-3
-                before:bg-yellow-500
+                before:bg-teal-600
                 relative
                 inline-block
               "
@@ -276,6 +285,57 @@ const { userInfo, loginWithGoogle } = useAuth();
             </span>
             大喜利の日本一を目指してほしいという想いが詰まっています
           </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black h-full px-4 py-8">
+      <div class="md:flex md:justify-center">
+        <div class="px-6 md:px-12 md:py-20 md:w-1/2">
+          <p class="text-white text-3xl font-black text-justify md:text-5xl">
+            10秒でひとわらい
+          </p>
+          <p
+            class="
+              text-white text-base text-bold
+              py-2
+              text-justify
+              mx-auto
+              md:text-xl
+            "
+          >
+            新感覚な、大喜利アプリ『Nipponグランプリ』は、バカ、シュール、身内などのお題に対して回答されたコンテンツをテンポよくスワイプすることでおもしろい大喜利にすぐ出会える
+          </p>
+          <div class="flex justify-center py-8 md:justify-start">
+            <button
+              type="button"
+              class="
+                bg-gradient-to-r
+                from-yellow-600
+                to-zinc-400
+                hover:from-zinc-500
+                hover:to-teal-600
+                cursor-pointer
+                text-white
+                font-bold
+                py-3
+                px-8
+                rounded-full
+                md:text-3xl
+                md:py-6
+                md:px-16
+              "
+              @click="loginWithGoogle"
+            >
+              さっそくひと笑い！
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img
+            class="h-64 md:h-96"
+            src="~/public/img/applink-logo.png"
+            alt="app-logo"
+          />
         </div>
       </div>
     </div>
