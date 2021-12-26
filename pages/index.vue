@@ -22,7 +22,7 @@ const toLogin = () => router.push("./login");
         </div>
         <img
           class="h-64 md:h-screen"
-          src="~/assets/img/sayno.png"
+          src="~/assets/img/yamato.png"
           alt="person"
         />
       </div>
