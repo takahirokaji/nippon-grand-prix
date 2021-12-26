@@ -35,17 +35,14 @@ const toLogin = () => router.push("./login");
             bg-gradient-to-r
             from-yellow-600
             to-zinc-400
-            hover:from-zinc-500
-            hover:to-teal-600
+            hover:from-zinc-500 hover:to-teal-600
             cursor-pointer
             text-white
             font-bold
             py-3
             px-8
             rounded-full
-            md:text-3xl
-            md:py-6
-            md:px-16
+            md:text-3xl md:py-6 md:px-16
           "
           @click="toLogin"
         >
@@ -80,8 +77,7 @@ const toLogin = () => router.push("./login");
             bg-white
             font-bold
             my-4
-            md:mx-6
-            md:w-1/4
+            md:mx-6 md:w-1/4
           "
         >
           <div>
@@ -105,8 +101,7 @@ const toLogin = () => router.push("./login");
             bg-white
             font-bold
             my-4
-            md:mx-6
-            md:w-1/4
+            md:mx-6 md:w-1/4
           "
         >
           <div>
@@ -130,8 +125,7 @@ const toLogin = () => router.push("./login");
             bg-white
             font-bold
             my-4
-            md:mx-6
-            md:w-1/4
+            md:mx-6 md:w-1/4
           "
         >
           <div>
@@ -187,7 +181,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -204,7 +199,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -223,7 +219,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -240,7 +237,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -259,7 +257,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -276,7 +275,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -295,7 +295,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -312,7 +313,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -331,7 +333,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -348,7 +351,8 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1 before:-skew-y-3
+                before:-inset-1
+                before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -387,17 +391,14 @@ const toLogin = () => router.push("./login");
                 bg-gradient-to-r
                 from-yellow-600
                 to-zinc-400
-                hover:from-zinc-500
-                hover:to-teal-600
+                hover:from-zinc-500 hover:to-teal-600
                 cursor-pointer
                 text-white
                 font-bold
                 py-3
                 px-8
                 rounded-full
-                md:text-3xl
-                md:py-6
-                md:px-16
+                md:text-3xl md:py-6 md:px-16
               "
               @click="toLogin"
             >
