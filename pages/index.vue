@@ -5,7 +5,7 @@ const toLogin = () => router.push("./login");
 
 <template>
   <div class="text-center">
-    <div class="bg-[#F7CC45]">
+    <div class="bg-[#FFCA00]">
       <div class="flex">
         <div>
           <img
@@ -13,10 +13,10 @@ const toLogin = () => router.push("./login");
             src="~/assets/img/nippon-grand-prix-title.png"
             alt="サービス"
           />
-          <p class="font-black text-xl md:text-6xl mt-4 px-6">
+          <p class="font-black text-xl md:text-5xl mt-4 px-6">
             スワイプでひと笑い
           </p>
-          <p class="font-bold text-base md:text-4xl mt-2 px-6 md:mt-4">
+          <p class="font-bold text-base md:text-2xl mt-2 px-6 md:mt-4">
             〜新感覚な大喜利アプリ〜
           </p>
         </div>
@@ -35,14 +35,17 @@ const toLogin = () => router.push("./login");
             bg-gradient-to-r
             from-yellow-600
             to-zinc-400
-            hover:from-zinc-500 hover:to-teal-600
+            hover:from-zinc-500
+            hover:to-teal-600
             cursor-pointer
             text-white
             font-bold
             py-3
             px-8
             rounded-full
-            md:text-3xl md:py-6 md:px-16
+            md:text-2xl
+            md:py-4
+            md:px-16
           "
           @click="toLogin"
         >
@@ -56,14 +59,14 @@ const toLogin = () => router.push("./login");
           md:text-center
           px-6
           pt-8
-          md:text-3xl
+          md:text-2xl
         "
       >
         <span class="text-yellow-500">Nipponグランプリ</span>
         は、大喜利をスワイプで評価、クイズ形式で投稿して余暇を楽しむサービスです。
       </h1>
     </div>
-    <div class="bg-[#F7CC45] h-hull px-4 py-8">
+    <div class="bg-[#FFCA00] h-hull px-4 py-8">
       <p class="font-bold text-3xl md:text-4xl">特徴</p>
       <p class="my-4 text-sm text-white">Feature</p>
       <div class="py-4 md:flex md:justify-center">
@@ -77,7 +80,8 @@ const toLogin = () => router.push("./login");
             bg-white
             font-bold
             my-4
-            md:mx-6 md:w-1/4
+            md:mx-6
+            md:w-1/4
           "
         >
           <div>
@@ -101,7 +105,8 @@ const toLogin = () => router.push("./login");
             bg-white
             font-bold
             my-4
-            md:mx-6 md:w-1/4
+            md:mx-6
+            md:w-1/4
           "
         >
           <div>
@@ -125,7 +130,8 @@ const toLogin = () => router.push("./login");
             bg-white
             font-bold
             my-4
-            md:mx-6 md:w-1/4
+            md:mx-6
+            md:w-1/4
           "
         >
           <div>
@@ -141,9 +147,9 @@ const toLogin = () => router.push("./login");
         </div>
       </div>
     </div>
-    <div class="bg-black h-full md:h-screen px-4 py-8">
+    <div class="bg-black h-full px-4 py-8">
       <p class="font-bold text-3xl md:text-4xl text-white">使い方</p>
-      <p class="my-4 text-sm text-[#F7CC45]">How to Use</p>
+      <p class="my-4 text-sm text-[#FFCA00]">How to Use</p>
       <div class="flex justify-center py-8 md:pt-20">
         <div class="w-40 md:w-80 text-white text-justify">
           <img
@@ -169,7 +175,7 @@ const toLogin = () => router.push("./login");
         </div>
       </div>
     </div>
-    <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
+    <div class="bg-[#FFCA00] h-hull px-4 py-8">
       <p class="font-bold text-3xl md:text-4xl text-black">よくある質問</p>
       <p class="my-4 text-sm text-white">Question & Answer</p>
       <div class="divide-y">
@@ -181,8 +187,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -199,8 +204,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -219,8 +223,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -237,8 +240,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -257,8 +259,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -275,8 +276,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -295,8 +295,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -313,8 +312,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -333,8 +331,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-pink-500
                 relative
                 inline-block
@@ -351,8 +348,7 @@ const toLogin = () => router.push("./login");
               class="
                 before:block
                 before:absolute
-                before:-inset-1
-                before:-skew-y-3
+                before:-inset-1 before:-skew-y-3
                 before:bg-teal-600
                 relative
                 inline-block
@@ -368,7 +364,7 @@ const toLogin = () => router.push("./login");
     <div class="bg-black h-full px-4 py-8">
       <div class="md:flex md:justify-center">
         <div class="px-6 md:px-12 md:py-20 md:w-1/2">
-          <p class="text-white text-3xl font-black text-justify md:text-5xl">
+          <p class="text-white text-3xl font-black text-justify md:text-4xl">
             10秒でひとわらい
           </p>
           <p
@@ -391,14 +387,17 @@ const toLogin = () => router.push("./login");
                 bg-gradient-to-r
                 from-yellow-600
                 to-zinc-400
-                hover:from-zinc-500 hover:to-teal-600
+                hover:from-zinc-500
+                hover:to-teal-600
                 cursor-pointer
                 text-white
                 font-bold
                 py-3
                 px-8
                 rounded-full
-                md:text-3xl md:py-6 md:px-16
+                md:text-2xl
+                md:py-4
+                md:px-16
               "
               @click="toLogin"
             >
