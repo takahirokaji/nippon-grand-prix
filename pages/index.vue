@@ -1,6 +1,6 @@
 <script setup>
-const { getArticles } = useFirestore();
-const { userInfo, loginWithGoogle } = useAuth();
+const router = useRouter();
+const toLogin = () => router.push("./login");
 </script>
 
 <template>
@@ -47,7 +47,7 @@ const { userInfo, loginWithGoogle } = useAuth();
             md:py-6
             md:px-16
           "
-          @click="loginWithGoogle"
+          @click="toLogin"
         >
           さっそくひと笑い！
         </button>
@@ -58,7 +58,7 @@ const { userInfo, loginWithGoogle } = useAuth();
           text-white text-justify
           md:text-center
           px-6
-          py-8
+          pt-8
           md:text-3xl
         "
       >
@@ -66,8 +66,8 @@ const { userInfo, loginWithGoogle } = useAuth();
         は、大喜利をスワイプで評価、クイズ形式で投稿して余暇を楽しむサービスです。
       </h1>
     </div>
-    <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
-      <p class="font-bold text-3xl md:text-4xl md:mt-20">特徴</p>
+    <div class="bg-[#F7CC45] h-hull px-4 py-8">
+      <p class="font-bold text-3xl md:text-4xl">特徴</p>
       <p class="my-4 text-sm text-white">Feature</p>
       <div class="py-4 md:flex md:justify-center">
         <div
@@ -399,7 +399,7 @@ const { userInfo, loginWithGoogle } = useAuth();
                 md:py-6
                 md:px-16
               "
-              @click="loginWithGoogle"
+              @click="toLogin"
             >
               さっそくひと笑い！
             </button>
