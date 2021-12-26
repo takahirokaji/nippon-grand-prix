@@ -10,7 +10,7 @@ const toLogin = () => router.push("./login");
         <div>
           <img
             class="h-32 w-full md:h-4/6 md:w-128 mt-6"
-            src="~/assets/img/nippon-grand-prix-title.png"
+            src="@/public/img/nippon-grand-prix-title.png"
             alt="サービス"
           />
           <p class="font-black text-xl md:text-6xl mt-4 px-6">
@@ -22,7 +22,7 @@ const toLogin = () => router.push("./login");
         </div>
         <img
           class="h-64 md:h-screen"
-          src="~/assets/img/sayno.png"
+          src="@/public/img/sayno.png"
           alt="person"
         />
       </div>
@@ -154,7 +154,7 @@ const toLogin = () => router.push("./login");
         <div class="w-40 md:w-80 text-white text-justify">
           <img
             class="h-64 md:h-4/6 rounded-md"
-            src="~/assets/img/HowToUse/sp1.png"
+            src="@/public/img/HowToUse/sp1.png"
             alt="sp1"
           />
           <p class="mt-4 text-md font-bold md:text-3xl">①簡単に評価</p>
@@ -165,7 +165,7 @@ const toLogin = () => router.push("./login");
         <div class="w-40 ml-4 md:ml-40 md:w-80 text-white text-justify">
           <img
             class="h-64 md:h-4/6 rounded-md"
-            src="~/assets/img/HowToUse/sp2.png"
+            src="@/public/img/HowToUse/sp2.png"
             alt="sp1"
           />
           <p class="mt-4 text-md font-bold md:text-3xl">②1分以内に回答</p>
@@ -408,7 +408,7 @@ const toLogin = () => router.push("./login");
         <div class="flex justify-center">
           <img
             class="h-64 md:h-96"
-            src="~/assets/img/applink-logo.png"
+            src="@/public/img/applink-logo.png"
             alt="app-logo"
           />
         </div>
