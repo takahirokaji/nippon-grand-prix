@@ -13,10 +13,10 @@ const { userInfo, loginWithGoogle } = useAuth();
             src="~/public/img/nippon-grand-prix-title.png"
             alt="サービス"
           />
-          <p class="font-black text-xl md:text-5xl mt-4 px-6">
+          <p class="font-black text-xl md:text-6xl mt-4 px-6">
             スワイプでひと笑い
           </p>
-          <p class="font-bold text-base md:text-2xl mt-2 px-6">
+          <p class="font-bold text-base md:text-4xl mt-2 px-6 md:mt-4">
             〜新感覚な大喜利アプリ〜
           </p>
         </div>
@@ -69,10 +69,82 @@ const { userInfo, loginWithGoogle } = useAuth();
     <div class="bg-[#F7CC45] h-hull md:h-screen px-4 py-8">
       <p class="font-bold text-3xl md:text-4xl md:mt-20">特徴</p>
       <p class="my-4 text-sm text-white">Feature</p>
-      <div class="py-8 md:flex">
-        <div class="rounded border p-3 shadow-lg">1</div>
-        <div class="rounded border p-3 shadow-lg">2</div>
-        <div class="rounded border p-3 shadow-lg">3</div>
+      <div class="py-4 md:flex md:justify-center">
+        <div
+          class="
+            max-w-md
+            overflow-hidden
+            rounded-lg
+            border
+            shadow-lg
+            bg-white
+            font-bold
+            my-4
+            md:mx-6
+            md:w-1/4
+          "
+        >
+          <div>
+            <p class="px-6 py-4 text-xl text-justify">
+              スワイプしておもしろい回答に出会おう！
+            </p>
+            <img
+              class="w-full h-64 md:h-80"
+              src="https://source.unsplash.com/yd4ubMUNTG0"
+              alt="おもしろ回答ページ例"
+            />
+          </div>
+        </div>
+        <div
+          class="
+            max-w-md
+            overflow-hidden
+            rounded-lg
+            border
+            shadow-lg
+            bg-white
+            font-bold
+            my-4
+            md:mx-6
+            md:w-1/4
+          "
+        >
+          <div>
+            <p class="px-6 py-4 text-xl text-justify">
+              ランキングでおもしろい回答を探そう！
+            </p>
+            <img
+              class="w-full h-64 md:h-80"
+              src="https://source.unsplash.com//qIu77BsFdds"
+              alt="ランキングページ例"
+            />
+          </div>
+        </div>
+        <div
+          class="
+            max-w-md
+            overflow-hidden
+            rounded-lg
+            border
+            shadow-lg
+            bg-white
+            font-bold
+            my-4
+            md:mx-6
+            md:w-1/4
+          "
+        >
+          <div>
+            <p class="px-6 py-4 text-xl text-justify">
+              制限時間内に投稿してみよう！
+            </p>
+            <img
+              class="w-full h-64 md:h-80"
+              src="https://source.unsplash.com/-2vD8lIhdnw"
+              alt="投稿ページ例"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <div class="bg-black h-full md:h-screen px-4 py-8">
