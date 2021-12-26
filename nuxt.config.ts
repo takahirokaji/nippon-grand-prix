@@ -23,5 +23,5 @@ export default defineNuxtConfig({
   //     measurementId: process.env.FIREBASE_MEASUREMENT_ID,
   //   },
   // },
-  ssr: true,
+  ssr: false,
 });
