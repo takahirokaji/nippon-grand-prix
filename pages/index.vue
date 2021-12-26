@@ -9,7 +9,7 @@ const toLogin = () => router.push("./login");
       <div class="flex">
         <div>
           <img
-            class="h-32 w-full md:h-4/6 md:w-128 mt-6"
+            class="h-32 w-full md:h-3/5 md:w-128 mt-6"
             src="~/assets/img/nippon-grand-prix-title.png"
             alt="サービス"
           />
