@@ -14,7 +14,7 @@ const redirect = () => {
       class="login-container h-screen flex flex-col justify-center items-center"
     >
       <div class="flex-1"></div>
-      <img class="max-w-xs" src="../img/only_title.png" />
+      <img class="max-w-xs" src="/img/only_title.png" />
       <div class="flex-1 flex flex-col justify-center items-center">
         <div class="flex-1"></div>
 
@@ -27,7 +27,7 @@ const redirect = () => {
           <span class="font-bold border-b">クッキーポリシー</span>をご覧ください
         </p>
         <div class="max-w-sm pt-4 px-16">
-          <img src="../img/google_signin.png" @click="redirect" />
+          <img src="/img/google_signin.png" @click="redirect" />
         </div>
         <div class="flex-1"></div>
       </div>
