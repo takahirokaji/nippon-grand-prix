@@ -85,14 +85,14 @@ const { userInfo, loginWithGoogle } = useAuth();
           "
         >
           <div>
-            <p class="px-6 py-4 text-xl text-justify">
-              スワイプしておもしろい回答に出会おう！
-            </p>
             <img
               class="w-full h-64 md:h-80"
               src="https://source.unsplash.com/yd4ubMUNTG0"
               alt="おもしろ回答ページ例"
             />
+            <p class="px-6 py-4 text-xl text-justify">
+              スワイプしておもしろい回答に出会おう！
+            </p>
           </div>
         </div>
         <div
@@ -110,14 +110,14 @@ const { userInfo, loginWithGoogle } = useAuth();
           "
         >
           <div>
-            <p class="px-6 py-4 text-xl text-justify">
-              ランキングでおもしろい回答を探そう！
-            </p>
             <img
               class="w-full h-64 md:h-80"
               src="https://source.unsplash.com//qIu77BsFdds"
               alt="ランキングページ例"
             />
+            <p class="px-6 py-4 text-xl text-justify">
+              ランキングでおもしろい回答を探そう！
+            </p>
           </div>
         </div>
         <div
@@ -135,14 +135,14 @@ const { userInfo, loginWithGoogle } = useAuth();
           "
         >
           <div>
-            <p class="px-6 py-4 text-xl text-justify">
-              制限時間内に投稿してみよう！
-            </p>
             <img
               class="w-full h-64 md:h-80"
               src="https://source.unsplash.com/-2vD8lIhdnw"
               alt="投稿ページ例"
             />
+            <p class="px-6 py-4 text-xl text-justify">
+              制限時間内に投稿してみよう！
+            </p>
           </div>
         </div>
       </div>
