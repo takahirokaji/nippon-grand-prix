@@ -1,9 +1,10 @@
 <script setup>
-const { loginWithGoogle } = useAuth();
+const { loginWithGoogle, stateCheck } = useAuth();
 const router = useRouter();
-const routeToTop = async () => {
-  await loginWithGoogle();
-  router.push("/about");
+
+const redirect = () => {
+  loginWithGoogle();
+  router.push("/redirect");
 };
 </script>
 
@@ -26,7 +27,7 @@ const routeToTop = async () => {
           <span class="font-bold border-b">クッキーポリシー</span>をご覧ください
         </p>
         <div class="max-w-sm pt-4 px-16">
-          <img src="../img/google_signin.png" @click="routeToTop" />
+          <img src="../img/google_signin.png" @click="redirect" />
         </div>
         <div class="flex-1"></div>
       </div>

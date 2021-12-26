@@ -1,6 +1,5 @@
 <script setup>
-const { getArticles } = useFirestore();
-const { userInfo, loginWithGoogle } = useAuth();
+const { loginWithGoogle } = useAuth();
 const router = useRouter();
 
 const test = () => {
