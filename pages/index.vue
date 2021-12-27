@@ -390,7 +390,7 @@ const toLogin = () => router.push("./login");
           >
             新感覚な大喜利アプリ『<span class="font-bold text-yellow-500"
               >Nipponグランプリ</span
-            >』は、バカ、シュール、身内などのお題に対して回答されたコンテンツをテンポよくスワイプすることでおもしろい大喜利にすぐ出会える
+            >』では、バカ、シュール、身内などのお題に対して回答されたコンテンツをテンポよくスワイプすることでおもしろい大喜利に出会うことができます
           </p>
           <div class="flex justify-center py-8 md:justify-start">
             <button
