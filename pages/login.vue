@@ -1,10 +1,10 @@
 <script setup>
-const { loginWithGoogle, stateCheck } = useAuth();
+// const { loginWithGoogle, stateCheck } = useAuth();
 const router = useRouter();
 
 const redirect = () => {
-  loginWithGoogle();
-  router.push("/redirect");
+  // loginWithGoogle();
+  router.push("/ranking");
 };
 </script>
 
