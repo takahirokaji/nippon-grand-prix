@@ -179,9 +179,10 @@ const toLogin = () => router.push("./login");
             src="~/assets/img/HowToUse/sp2.png"
             alt="sp1"
           />
-          <p class="mt-4 text-md font-bold md:text-3xl">②1分以内に回答</p>
+          <p class="mt-4 text-md font-bold md:text-3xl">②ランキングを確認</p>
           <p class="mt-4 text-sm md:text-xl">
-            大喜利のお題を見て、1分以内におもしろ回答を目指して投稿してみましょう
+            ランキング一覧を見て、おもしろい回答を探してみましょう
+            <!-- 大喜利のお題を見て、1分以内におもしろ回答を目指して投稿してみましょう -->
           </p>
         </div>
       </div>
@@ -190,42 +191,6 @@ const toLogin = () => router.push("./login");
       <p class="font-bold text-3xl md:text-4xl text-black">よくある質問</p>
       <p class="my-4 text-sm text-white">Question & Answer</p>
       <div class="divide-y">
-        <div class="py-8 md:py-12">
-          <blockquote
-            class="text-md font-semibold italic text-black md:text-2xl"
-          >
-            <span
-              class="
-                before:block
-                before:absolute
-                before:-inset-1 before:-skew-y-3
-                before:bg-pink-500
-                relative
-                inline-block
-              "
-            >
-              <span class="relative text-white">Q</span>
-            </span>
-            ボケてスベったらなぐさめてくれますか？
-          </blockquote>
-          <blockquote
-            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
-          >
-            <span
-              class="
-                before:block
-                before:absolute
-                before:-inset-1 before:-skew-y-3
-                before:bg-teal-600
-                relative
-                inline-block
-              "
-            >
-              <span class="relative text-white">A</span>
-            </span>
-            はい！運営者がなんとかします
-          </blockquote>
-        </div>
         <div class="py-8 md:py-12">
           <blockquote
             class="text-md font-semibold italic text-black md:text-2xl"
@@ -368,6 +333,42 @@ const toLogin = () => router.push("./login");
               <span class="relative text-white">A</span>
             </span>
             大喜利の日本一を目指してほしいという想いが詰まっています
+          </blockquote>
+        </div>
+        <div class="py-8 md:py-12">
+          <blockquote
+            class="text-md font-semibold italic text-black md:text-2xl"
+          >
+            <span
+              class="
+                before:block
+                before:absolute
+                before:-inset-1 before:-skew-y-3
+                before:bg-pink-500
+                relative
+                inline-block
+              "
+            >
+              <span class="relative text-white">Q</span>
+            </span>
+            ボケてスベったら精神的に病んだりしませんか？
+          </blockquote>
+          <blockquote
+            class="mt-4 text-md font-semibold italic text-black md:text-2xl"
+          >
+            <span
+              class="
+                before:block
+                before:absolute
+                before:-inset-1 before:-skew-y-3
+                before:bg-teal-600
+                relative
+                inline-block
+              "
+            >
+              <span class="relative text-white">A</span>
+            </span>
+            低評価とかはないので安心してご利用ください
           </blockquote>
         </div>
       </div>
