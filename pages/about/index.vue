@@ -8,6 +8,7 @@ import { useUserSubs } from "../../composables/state";
 const user = useUser();
 const subs = useUserSubs();
 const questions = await getQuestionAndAnswer();
+// console.log(user)
 </script>
 
 <template>
