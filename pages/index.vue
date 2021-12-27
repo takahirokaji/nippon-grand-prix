@@ -1,20 +1,9 @@
 <script setup>
-const title = "Nipponグランプリ";
 const router = useRouter();
 const toLogin = () => router.push("./login");
 </script>
 
 <template>
-  <Html>
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta
-        name="description"
-        :content="`${title}
-        は、大喜利をスワイプで評価、クイズ形式で投稿して余暇を楽しむサービスです`"
-      />
-    </Head>
-  </Html>
   <div class="text-center">
     <div class="bg-[#FFCA00]">
       <div class="flex">
