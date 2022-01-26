@@ -24,6 +24,6 @@ const questions = await getQuestionAndAnswer();
     <div>liked{{ subs.liked.value }}</div>
     <div>superLiked{{ subs.superLiked.value }}</div>
     <div>viewed{{ subs.viewed.value }}</div>
-    <div>allQ&A(length):{{ questions.length }}</div>
+    <div>allQ&A(length):{{ questions }}</div>
   </div>
 </template>

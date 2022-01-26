@@ -8,6 +8,9 @@ import {
   addDoc,
   doc,
   serverTimestamp,
+  FieldValue,
+  updateDoc,
+  increment,
 } from "firebase/firestore";
 
 import firebaseInit from "./firebaseInit";
@@ -62,7 +65,9 @@ export const getQuestionAndAnswer = async () => {
   const qustionSnaps = await getDocs(questionsRef);
   const allQandA = [];
   qustionSnaps.forEach((snap) => {
-    allQandA.push(snap.data());
+    const data = snap.data();
+    data.id = snap.id;
+    allQandA.push(data);
   });
   return allQandA;
 };
@@ -76,5 +81,37 @@ export const addQuestionAndAnswer = async (uid) => {
     poster: uid,
     question: "YK2YgoiUwXJa0cq4TId2",
     views: 0,
+  });
+};
+
+export const getAllQuestion = async () => {
+  const questionsRef = collection(db, "questions");
+  const qustionSnaps = await getDocs(questionsRef);
+  const all = [];
+  qustionSnaps.forEach((snap) => {
+    const data = snap.data();
+    data.id = snap.id;
+    all.push(data);
+  });
+  return all;
+};
+
+export const getUserNameAndIcon = async (id) => {
+  const docRef = doc(db, "users", id);
+  const docSnap = await getDoc(docRef);
+  const name = docSnap.data().name;
+  const icon = docSnap.data().icon;
+
+  return {
+    name,
+    icon,
+  };
+};
+
+export const incrementLikes = async (id, num) => {
+  const docRef = doc(db, "q&a", id);
+
+  await updateDoc(docRef, {
+    likes: increment(num),
   });
 };
